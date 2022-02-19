@@ -184,22 +184,26 @@ main {
   padding-bottom: 3rem;
 }
 
-.total-tip-section > h3 {
+.total-amount-text > h3 {
   color: var(--White);
   padding-bottom: 0.2rem;
 }
 
-.total-tip-section > h4 {
+.total-amount-text > h4 {
   color: var(--darkGrayishCyanTwo);
   font-size: 1.1rem;
 }
 
-.total-tip-per-person > h3 {
+.total-tip-per-person {
+  display: flex;
+}
+
+.total-tip-text > h3 {
   color: var(--White);
   padding-bottom: 0.2rem;
 }
 
-.total-tip-per-person > h4 {
+.total-tip-text > h4 {
   color: var(--darkGrayishCyanTwo);
   font-size: 1.1rem;
 }
