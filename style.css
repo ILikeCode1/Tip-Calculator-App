@@ -118,17 +118,13 @@ main {
   background-color: var(--White);
   display: flex;
   flex-direction: row;
-  width: 105rem;
+  width: 85rem;
   margin: 0 auto;
-  border-radius: 1.6rem;
+  border-radius: 2rem;
 }
 
 .input-section {
-  padding: 0 4.5rem;
-}
-
-.bill-total {
-  padding: 3rem 0;
+  padding: 3.25rem 3rem 4.25rem 4rem;
 }
 
 .percent-tip-selection {
@@ -148,13 +144,13 @@ main {
   background-color: var(--veryDarkCyan);
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-size: 23px;
-  width: 10.5rem;
+  font-size: 2.3rem;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   text-align: center;
+  width: 10.5rem;
   padding: 0.7rem 1rem;
   margin-bottom: 1.4rem;
   margin-right: 1.2rem;
@@ -166,22 +162,22 @@ main {
   background-color: var(--lightGrayishCyanOne);
 }
 
-.total-people-count {
-  padding-bottom: 4.5rem;
-}
-
 /**/
 
 .calculation-section {
   background-color: var(--veryDarkCyan);
-  padding: 3.5rem 3rem;
+  padding: 3.5rem 3.5rem 0 3.5rem;
   margin: 3rem 0;
-  border-radius: 1.2rem;
+  border-radius: 1.6rem;
 }
 
 .total-tip-section {
   display: flex;
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
+}
+
+.total-tip-section > h1 {
+  padding-left: 10rem;
 }
 
 .total-amount-text > h3 {
@@ -198,6 +194,10 @@ main {
   display: flex;
 }
 
+.total-tip-per-person > h1 {
+  padding-left: 13rem;
+}
+
 .total-tip-text > h3 {
   color: var(--White);
   padding-bottom: 0.2rem;
@@ -211,11 +211,16 @@ main {
 .reset-button {
   color: var(--veryDarkCyan);
   background-color: hsl(183, 100%, 20%);
-  max-width: 20rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 31rem;
   padding: 1rem 0;
+  margin-top: 12.5rem;
+  border-radius: 0.6rem;
 }
 
 .reset-button:hover {
