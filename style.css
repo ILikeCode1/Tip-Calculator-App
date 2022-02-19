@@ -65,24 +65,7 @@ input {
   cursor: pointer;
 }
 
-/* Main Layout Styling */
-main {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.container {
-  background-color: var(--White);
-  width: 105rem;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  border-radius: 1.5rem;
-}
-
+/* ID Selectors */
 #bill-input {
   background-image: url("images/icon-dollar.svg");
 }
@@ -114,12 +97,34 @@ main {
   border-radius: 0.5rem;
 }
 
+/* Main Layout Styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--White);
+  width: 105rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  border-radius: 1.6rem;
+}
+
 .input-section {
-  padding: 4rem;
+  padding: 0 4.5rem;
+}
+
+.bill-total {
+  padding: 3rem 0;
 }
 
 .percent-tip-selection {
-  padding: 1.7rem 0;
+  padding-bottom: 2.5rem;
 }
 
 .percent-tip-selection > h3 {
@@ -154,10 +159,16 @@ main {
   color: var(--veryDarkCyan);
 }
 
+.total-people-count {
+  padding-bottom: 4.5rem;
+}
+
 /**/
 
 .calculation-section {
   background-color: var(--veryDarkCyan);
+  margin: 4rem 0;
+  border-radius: 1.5rem;
 }
 
 .reset-button {
@@ -168,4 +179,8 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+}
+
+.reset-button:hover {
+  background-color: var(--lightGrayishCyanOne);
 }
