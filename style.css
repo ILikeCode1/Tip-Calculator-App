@@ -53,26 +53,19 @@ h4 {
   font-weight: 400;
 }
 
-ul > li {
+li {
   display: inline-block;
 }
 
-#bill-input,
-#people-input {
-  color: var(--darkGrayishCyanOne);
-  background-repeat: no-repeat;
-  background-position: 1.3rem;
-  background-color: var(--lightGrayishCyanTwo);
+input {
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-size: 2.3rem;
-  text-align: end;
-  width: 35.5rem;
-  padding: 0.7rem 2rem;
+  font-size: 2.4rem;
   border: none;
-  border-radius: 0.7rem;
+  cursor: pointer;
 }
 
+/* Main Layout Styling */
 main {
   display: flex;
   justify-content: center;
@@ -90,12 +83,39 @@ main {
   border-radius: 1.5rem;
 }
 
-.input-section {
-  padding: 4rem;
-}
-
 #bill-input {
   background-image: url("images/icon-dollar.svg");
+}
+
+#people-input {
+  background-image: url("images/icon-person.svg");
+}
+
+#bill-input,
+#people-input {
+  color: var(--darkGrayishCyanOne);
+  background-repeat: no-repeat;
+  background-position: 1.3rem;
+  background-color: var(--lightGrayishCyanTwo);
+  text-align: end;
+  width: 35.5rem;
+  padding: 0.7rem 2rem;
+  border-radius: 0.7rem;
+}
+
+#custom-input {
+  color: var(--veryDarkCyan);
+  background-color: var(--lightGrayishCyanTwo);
+  width: 11rem;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.4rem;
+  margin-right: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.input-section {
+  padding: 4rem;
 }
 
 .percent-tip-selection {
@@ -129,23 +149,9 @@ main {
   border-radius: 0.5rem;
 }
 
-#custom-input {
+.tip-percent-list > li > a:hover {
+  background-color: var(--lightGrayishCyanOne);
   color: var(--veryDarkCyan);
-  background-color: var(--lightGrayishCyanTwo);
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-size: 23px;
-  width: 11rem;
-  text-align: center;
-  padding: 0.7rem 1rem;
-  margin-bottom: 1.4rem;
-  margin-right: 1.2rem;
-  border-radius: 0.5rem;
-  border: none;
-}
-
-#people-input {
-  background-image: url("images/icon-person.svg");
 }
 
 /**/
