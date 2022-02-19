@@ -35,22 +35,29 @@ body {
 ul,
 li,
 a {
-  text-decoration: none;
   list-style: none;
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--strongCyan);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 h3 {
   color: var(--darkGrayishCyanOne); /*Remove after makeing rest*/
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 0.9rem 0;
 }
 
 h4 {
   color: var(--darkGrayishCyanTwo);
   font-family: "Space Mono", monospace;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 li {
@@ -60,7 +67,7 @@ li {
 input {
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   border: none;
   cursor: pointer;
 }
@@ -81,7 +88,7 @@ input {
   background-position: 1.3rem;
   background-color: var(--lightGrayishCyanTwo);
   text-align: end;
-  width: 35.5rem;
+  width: 34.5rem;
   padding: 0.7rem 2rem;
   border-radius: 0.7rem;
 }
@@ -89,15 +96,16 @@ input {
 #custom-input {
   color: var(--veryDarkCyan);
   background-color: var(--lightGrayishCyanTwo);
-  width: 11rem;
-  text-align: center;
-  padding: 0.7rem 1rem;
+  width: 10.5rem;
+  padding: 0.8rem 1rem;
   margin-bottom: 1.4rem;
   margin-right: 1.2rem;
-  border-radius: 0.5rem;
+  text-align: center;
+  border-radius: 0.6rem;
 }
 
 /* Main Layout Styling */
+
 main {
   display: flex;
   justify-content: center;
@@ -108,9 +116,9 @@ main {
 
 .container {
   background-color: var(--White);
-  width: 105rem;
   display: flex;
   flex-direction: row;
+  width: 105rem;
   margin: 0 auto;
   border-radius: 1.6rem;
 }
@@ -128,21 +136,20 @@ main {
 }
 
 .percent-tip-selection > h3 {
-  padding-bottom: 1rem;
+  padding-bottom: 1.4rem;
 }
 
 .tip-percent-list {
   max-width: 37rem;
-  padding-top: 0.4rem;
 }
 
 .tip-percent-list > li > a {
+  color: var(--White);
+  background-color: var(--veryDarkCyan);
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 23px;
-  color: var(--White);
-  background-color: var(--veryDarkCyan);
-  width: 11rem;
+  width: 10.5rem;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -151,12 +158,12 @@ main {
   padding: 0.7rem 1rem;
   margin-bottom: 1.4rem;
   margin-right: 1.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
 }
 
 .tip-percent-list > li > a:hover {
-  background-color: var(--lightGrayishCyanOne);
   color: var(--veryDarkCyan);
+  background-color: var(--lightGrayishCyanOne);
 }
 
 .total-people-count {
@@ -167,8 +174,34 @@ main {
 
 .calculation-section {
   background-color: var(--veryDarkCyan);
-  margin: 4rem 0;
-  border-radius: 1.5rem;
+  padding: 3.5rem 3rem;
+  margin: 3rem 0;
+  border-radius: 1.2rem;
+}
+
+.total-tip-section {
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.total-tip-section > h3 {
+  color: var(--White);
+  padding-bottom: 0.2rem;
+}
+
+.total-tip-section > h4 {
+  color: var(--darkGrayishCyanTwo);
+  font-size: 1.1rem;
+}
+
+.total-tip-per-person > h3 {
+  color: var(--White);
+  padding-bottom: 0.2rem;
+}
+
+.total-tip-per-person > h4 {
+  color: var(--darkGrayishCyanTwo);
+  font-size: 1.1rem;
 }
 
 .reset-button {
