@@ -235,39 +235,39 @@ main {
   background-color: var(--lightGrayishCyanOne);
 }
 
-
 @media screen and (max-width: 875px) {
+  /* ID Selectors */
   #bill-input,
   #people-input {
-    width: 97%;
+    width: 100%;
   }
 
   #custom-input {
-    width: 46%;
+    width: 47%;
     text-align: end;
   }
+
+  /* Main Layout Styling */
 
   .container {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    padding: 0 4rem;
+    padding: 3rem 4rem;
     margin-top: 10rem;
     border-radius: 1.7rem 1.7rem 0 0;
   }
 
   .input-section {
-    width: 100%;
     padding: 0;
-    margin: 0;
-  }
-
-  .bill-total {
-    margin: 3rem 0 1.5rem 0;
   }
 
   .percent-tip-selection {
     width: 100%;
+  }
+
+  .percent-tip-selection > h3 {
+    padding: 0;
   }
 
   .tip-percent-list {
@@ -276,15 +276,17 @@ main {
 
   .tip-percent-list > li {
     width: 49%;
-    padding-right: 1rem;
   }
 
   .tip-percent-list > li > a {
     width: 100%;
+    margin: 1rem 1rem 0 0;
+    padding: 0.7rem;
   }
 
   .calculation-section {
-    width: 97%;
+    width: 100%;
+    margin: 3rem 0;
   }
 
   .total-amount-text {
@@ -297,6 +299,6 @@ main {
 
   .reset-button {
     max-width: 100%;
-    margin: 2rem 0;
+    margin-top: 3rem;
   }
 }
