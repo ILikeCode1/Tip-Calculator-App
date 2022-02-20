@@ -210,7 +210,7 @@ main {
 
 .reset-button {
   color: var(--veryDarkCyan);
-  background-color: hsl(183, 100%, 20%);
+  background-color: var(--strongCyan);
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 1.7rem;
@@ -225,4 +225,69 @@ main {
 
 .reset-button:hover {
   background-color: var(--lightGrayishCyanOne);
+}
+
+@media screen and (max-width: 875px) {
+  #bill-input,
+  #people-input {
+    width: 97%;
+  }
+
+  #custom-input {
+    width: 46%;
+    text-align: end;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 4rem;
+    margin-top: 10rem;
+    border-radius: 1.7rem 1.7rem 0 0;
+  }
+
+  .input-section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bill-total {
+    margin: 3rem 0 1.5rem 0;
+  }
+
+  .percent-tip-selection {
+    width: 100%;
+  }
+
+  .tip-percent-list {
+    max-width: 100%;
+  }
+
+  .tip-percent-list > li {
+    width: 49%;
+    padding-right: 1rem;
+  }
+
+  .tip-percent-list > li > a {
+    width: 100%;
+  }
+
+  .calculation-section {
+    width: 97%;
+  }
+
+  .total-amount-text {
+    width: 100%;
+  }
+
+  .total-tip-text {
+    width: 100%;
+  }
+
+  .reset-button {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
 }
