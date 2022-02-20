@@ -50,17 +50,17 @@ h3 {
   color: var(--darkGrayishCyanOne); /*Remove after makeing rest*/
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-size: 1.4rem;
-  padding: 0.9rem 0;
+  font-size: 1.3rem;
 }
 
 h4 {
   color: var(--darkGrayishCyanTwo);
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
-li {
+ul > li {
   display: inline-block;
 }
 
@@ -89,17 +89,16 @@ input {
   background-color: var(--lightGrayishCyanTwo);
   text-align: end;
   width: 34.5rem;
-  padding: 0.7rem 2rem;
-  border-radius: 0.7rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.6rem;
 }
 
 #custom-input {
   color: var(--veryDarkCyan);
   background-color: var(--lightGrayishCyanTwo);
   width: 10.5rem;
-  padding: 0.8rem 1rem;
-  margin-bottom: 1.4rem;
-  margin-right: 1.2rem;
+  padding: 0.6rem;
+  margin: 0 1.2rem 1.2rem 0;
   text-align: center;
   border-radius: 0.6rem;
 }
@@ -118,17 +117,26 @@ main {
   background-color: var(--White);
   display: flex;
   flex-direction: row;
-  width: 85rem;
+  width: 83rem;
+  padding: 3.5rem;
   margin: 0 auto;
   border-radius: 2rem;
 }
 
 .input-section {
-  padding: 3.25rem 3rem 4.25rem 4rem;
+  padding-right: 2.5rem;
+}
+
+.bill-total {
+  padding: 1rem 0 2.5rem 0;
+}
+
+.bill-total > h3 {
+  padding-bottom: 0.8rem;
 }
 
 .percent-tip-selection {
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .percent-tip-selection > h3 {
@@ -151,9 +159,8 @@ main {
   flex-direction: column;
   text-align: center;
   width: 10.5rem;
-  padding: 0.7rem 1rem;
-  margin-bottom: 1.4rem;
-  margin-right: 1.2rem;
+  padding: 0.6rem;
+  margin: 0 1.2rem 1.2rem 0;
   border-radius: 0.6rem;
 }
 
@@ -162,12 +169,15 @@ main {
   background-color: var(--lightGrayishCyanOne);
 }
 
+.total-people-count > h3 {
+  padding-bottom: 0.8rem;
+}
+
 /**/
 
 .calculation-section {
   background-color: var(--veryDarkCyan);
-  padding: 3.5rem 3.5rem 0 3.5rem;
-  margin: 3rem 0;
+  padding: 3.5rem;
   border-radius: 1.6rem;
 }
 
@@ -177,7 +187,11 @@ main {
 }
 
 .total-tip-section > h1 {
-  padding-left: 10rem;
+  padding-left: 9.5rem;
+}
+
+.total-amount-text {
+  width: 9rem;
 }
 
 .total-amount-text > h3 {
@@ -185,17 +199,16 @@ main {
   padding-bottom: 0.2rem;
 }
 
-.total-amount-text > h4 {
-  color: var(--darkGrayishCyanTwo);
-  font-size: 1.1rem;
-}
-
 .total-tip-per-person {
   display: flex;
 }
 
 .total-tip-per-person > h1 {
-  padding-left: 13rem;
+  padding-left: 9.5rem;
+}
+
+.total-tip-text {
+  width: 9rem;
 }
 
 .total-tip-text > h3 {
@@ -203,29 +216,25 @@ main {
   padding-bottom: 0.2rem;
 }
 
-.total-tip-text > h4 {
-  color: var(--darkGrayishCyanTwo);
-  font-size: 1.1rem;
-}
-
 .reset-button {
   color: var(--veryDarkCyan);
   background-color: var(--strongCyan);
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 31rem;
   padding: 1rem 0;
-  margin-top: 12.5rem;
+  margin-top: 10.5rem;
   border-radius: 0.6rem;
 }
 
 .reset-button:hover {
   background-color: var(--lightGrayishCyanOne);
 }
+
 
 @media screen and (max-width: 875px) {
   #bill-input,
