@@ -7,6 +7,9 @@ let totalTipAmount = document.querySelector(".total-tip-amount");
 let totalPersonAmount = document.querySelector(".total-person-amount");
 let resetButton = document.querySelector(".reset-button");
 
+let errorMessage1 = document.querySelector(".error-text1");
+let errorMessage2 = document.querySelector(".error-text2");
+
 // Calculations
 
 
