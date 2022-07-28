@@ -130,8 +130,15 @@ main {
   padding: 1rem 0 3rem 0;
 }
 
-.bill-total > h3 {
+.bill-total-text {
+  display: flex;
   padding-bottom: 0.8rem;
+}
+
+.error-text1 {
+  color: hsl(11, 50%, 59%);
+  margin-left: 21rem;
+  display: none;
 }
 
 .percent-tip-selection {
@@ -173,8 +180,15 @@ main {
   background-color: var(--lightGrayishCyanOne);
 }
 
-.total-people-count > h3 {
+.total-people-count-text {
+  display: flex;
   padding-bottom: 0.8rem;
+}
+
+.error-text2 {
+  color: hsl(11, 50%, 59%);
+  margin-left: 11.5rem;
+  display: none;
 }
 
 /**/
