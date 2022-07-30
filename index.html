@@ -4,13 +4,12 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="/images/favicon-32x32.png"
     />
   </head>
   <body>
@@ -24,21 +23,21 @@
               <h3>Bill</h3>
               <h3 class="error-text1">Can't be zero</h3>
             </div>
-            <input id="bill-input" placeholder="0" />
+            <input id="bill-input" placeholder="0" maxlength="4" />
           </div>
           <div class="percent-tip-selection">
             <h3>Select Tip %</h3>
             <ul class="tip-percent-list">
               <li><a class="percent-list-items">5%</a></li>
               <li><a class="percent-list-items">10%</a></li>
-              <li><a class="percent-list-items">15%</a></li>
+              <li class="noma"><a class="percent-list-items">15%</a></li>
               <li><a class="percent-list-items">25%</a></li>
               <li><a class="percent-list-items">50%</a></li>
-              <input id="custom-input" placeholder="Custom" />
+              <input id="custom-input" class="noma" placeholder="Custom" />
             </ul>
           </div>
-          <div class="total-people-count">
-            <div class="total-people-count-text">
+          <div class="total-people">
+            <div class="total-people-text">
               <h3>Number of People</h3>
               <h3 class="error-text2">Can't be zero</h3>
             </div>
@@ -52,14 +51,14 @@
               <h3>Tip Amount</h3>
               <h4>/ person</h4>
             </div>
-            <h1 class="total-tip-amount">$0.00</h1>
+            <h2 class="total-tip-amount">$0.00</h2>
           </div>
           <div class="total-tip-per-person">
             <div class="total-tip-text">
               <h3>Total</h3>
               <h4>/ person</h4>
             </div>
-            <h1 class="total-person-amount">$0.00</h1>
+            <h2 class="total-person-amount">$0.00</h2>
           </div>
           <a class="reset-button">RESET</a>
         </div>
